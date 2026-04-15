@@ -14,7 +14,6 @@ try:
 except ImportError:
     from distutils.core import setup
 
-
 version_regex = r'__version__ = ["\']([^"\']*)["\']'
 with open('certifi/__init__.py') as f:
     text = f.read()
@@ -30,13 +29,15 @@ if sys.argv[-1] == 'publish':
     sys.exit()
 
 setup(
+  maintainer_email="221268890+Lineaje-DepFixer@users.noreply.github.com", 
+  maintainer="Lineaje DepFixer", 
     name='certifi',
     version=VERSION,
     description='Python package for providing Mozilla\'s CA Bundle.',
     long_description=open('README.rst').read(),
     author='Kenneth Reitz',
     author_email='me@kennethreitz.com',
-    url='https://github.com/certifi/python-certifi',
+    url="https://github.com/lineaje-labs-gos/certifi-python-certifi",
     packages=[
         'certifi',
     ],
@@ -63,6 +64,8 @@ setup(
         'Programming Language :: Python :: 3.11',
     ],
     project_urls={
-        'Source': 'https://github.com/certifi/python-certifi',
-    },
+    'Homepage': 'https://github.com/lineaje-labs-gos/certifi-python-certifi',
+    'Repository': 'https://github.com/lineaje-labs-gos/certifi-python-certifi',
+    'Tracker': 'https://github.com/lineaje-labs-gos/certifi-python-certifi/issues',
+  },
 )
